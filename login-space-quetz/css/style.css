@@ -10,6 +10,8 @@
 #lg-backgound-image img {
     position: absolute;
     left: 0;
+    min-width: 100%;
+    min-height: 100%;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;

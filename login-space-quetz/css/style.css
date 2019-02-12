@@ -1,0 +1,43 @@
+#lg-backgound-image {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+#lg-backgound-image img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes changeBG {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#lg-backgound-image img#bg1 {
+    animation-name: changeBG;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
